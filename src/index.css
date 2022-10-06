@@ -1,0 +1,82 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.pricing-table{
+  background-color: rgb(69, 221, 208);
+  display:flex;
+  padding: 50px;
+  justify-content: center;
+  gap:30px;
+}
+
+.price-card-container{
+  width:250px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.price-card-container:hover{
+  margin-top: -.25rem;
+  margin-bottom: .25rem;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.1)
+}
+
+.price-card-header{
+  border-bottom: 1px solid grey;
+}
+
+.price-card-header h5{
+  opacity: 0.7;
+}
+
+.price-card-header h1{
+  font-size: 50px;
+}
+
+.price-card-header .per-time{
+  font-size: 0.8rem;
+}
+
+.price-card-body{
+  text-align: left;
+  line-height: 45px;
+}
+
+.price-card-body p{
+  font-weight: 450;
+}
+
+.no{
+  opacity: 0.7;
+}
+
+.price-card-body button{
+  width: 250px;
+  height: 50px;;
+  background-color: rgb(61, 61, 250,0.5);
+  border: none;
+  font-weight: bolder;
+  margin: auto;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+.price-card-body button:hover{
+  cursor: pointer;
+}
+
+.price-card-container:hover .price-card-body button{
+  background-color: rgb(61, 61, 250,1);
+}
+
+@media screen and (max-width:767px) {
+  .pricing-table{
+    flex-direction: column;
+  }
+}
